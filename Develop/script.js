@@ -27,7 +27,7 @@ generateBtn.addEventListener("click", writePassword);
 function generatePassword() {
   var finalPassword = ""
   // ask what password size they would like
-  var passwordSize = prompt("What is the size of your password? Select between 8-128 character.");
+  var passwordSize = prompt("Select #8-128 to chosse length of password.");
   passwordSize = parseInt(passwordSize);
   if (passwordSize >= 8 && passwordSize <= 128) {
     var isLowercase = confirm("Does this password include lowercase letters?");
@@ -57,9 +57,8 @@ function generatePassword() {
       }
     }
   }
-
   else {
     alert("Invalid. Try again.")
   }
   return finalPassword;
-}
+};
